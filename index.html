@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-mns">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<p>单机鼠标左键扫出安全区</p>
+	<p>按住空格键再单机鼠标左键标记雷</p>
+	<div class="box">
+		<div class="main">
+			
+		</div>
+		<div class="mask">
+			<h1>GAME OVER</h1>
+		</div>
+		<div class="start">
+			start a new game
+		</div>
+		<!-- <input type="number" id="num"> -->
+	</div>
+
+	<script>
+		(function(){
+			document.addEventListener('contextmenu',function(e){
+				e.preventDefault();
+			});
+			document.addEventListener('selectstart',function(e) {
+				e.preventDefault();
+			})
+		})();
+
+	</script>
+	<script src="./js/index.js"></script>
+</body>
+</html>

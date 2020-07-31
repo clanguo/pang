@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1;
+	color: rgb(172, 170, 170);
+}
+.box {
+	width: 404px;
+	margin: 10px auto;
+}
+.main {
+	position: relative;
+	overflow: hidden;
+	border: 2px solid #999;
+}
+.main .item {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: #8c8c8c;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	box-sizing: border-box;
+}
+.main .item:nth-child(10n){
+	border-right: 1px solid #000;
+}
+.main .item:nth-child(n+91){
+	border-bottom: 1px solid #000;
+}
+.item.showed {
+	color: rgba(0, 0, 0, 1);
+	background-color: #ccc;
+}
+.item.sele {
+	background-color: yellow;
+}
+.item.err {
+	background-color: red;
+}
+.item {
+	line-height: 1.3;
+	font-size: 30px;
+	color: rgba(0, 0, 0, 0);
+	text-align: center;
+}
+
+.mask {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.mask.display {
+	display: block;
+	background-color: rgba(250,250,250,.7);
+}
+.mask h1 {
+	text-align: center;
+	line-height: 16;
+}
+.start {
+	position: absolute;
+	z-index: 999;
+	top: 480px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 400px;
+	/* height: 120px; */
+	border: 2px double #000;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #aac;
+	cursor: pointer;
+	font-size: 20px;
+}
